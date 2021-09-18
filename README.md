@@ -34,7 +34,13 @@ yarn build
 ```
 
 3. Define your environment variables using the instructions below, and start up the server with `npm start`.
+```
+metaplex create_candy_machine -e devnet -k ~/.config/solana/devnet.json -p 0.1
+```
 
+```
+metaplex set_start_date -k ~/.config/solana/devnet.json -d "18 Sep 2021 07:25:00"
+```
 #### Environment Variables
 
 To run the project, first rename the `.env.example` file at the root directory to `.env` and update the following variables:
