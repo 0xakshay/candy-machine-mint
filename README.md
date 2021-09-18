@@ -36,7 +36,10 @@ yarn build
 3. Define your environment variables using the instructions below, and start up the server with `npm start`.
 
 ## Create candy machien
-
+### Upload, verify, create and set start date
+```
+metaplex upload ./assets --env devnet --keypair ~/.config/solana/devnet.json
+```
 ```
 metaplex create_candy_machine -e devnet -k ~/.config/solana/devnet.json -p 0.1
 ```
