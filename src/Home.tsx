@@ -49,6 +49,8 @@ const Home = (props: HomeProps) => {
   });
 
   const [startDate, setStartDate] = useState(new Date(props.startDate));
+  const [itemsRedeemed, setItemsRedeemed] = useState<number>();
+  const [itemsAvailable, setItemsAvailable] = useState<number>();
 
   const wallet = useAnchorWallet();
   const [candyMachine, setCandyMachine] = useState<CandyMachine>();
@@ -132,7 +134,7 @@ const Home = (props: HomeProps) => {
     (async () => {
       if (!wallet) return;
 
-      const { candyMachine, goLiveDate, itemsRemaining } =
+      const { candyMachine, goLiveDate, itemsRemaining, itemsRedeemed, itemsAvailable } =
         await getCandyMachineState(
           wallet as anchor.Wallet,
           props.candyMachineId,
@@ -142,6 +144,8 @@ const Home = (props: HomeProps) => {
       setIsSoldOut(itemsRemaining === 0);
       setStartDate(goLiveDate);
       setCandyMachine(candyMachine);
+      setItemsRedeemed(itemsRedeemed);
+      setItemsAvailable(itemsAvailable);
     })();
   }, [wallet, props.candyMachineId, props.connection]);
 
@@ -154,6 +158,8 @@ const Home = (props: HomeProps) => {
       {wallet && (
         <p>Balance: {(balance || 0).toLocaleString()} SOL</p>
       )}
+
+      {(<p>Remaining: {(itemsRedeemed)} / {(itemsAvailable)}</p>)}
 
       <MintContainer>
         {!wallet ? (
