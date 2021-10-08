@@ -11,7 +11,7 @@ ts-node ~/metaplex-foundation/metaplex/js/packages/cli/src/candy-machine-cli.ts 
 ts-node ~/metaplex-foundation/metaplex/js/packages/cli/src/candy-machine-cli.ts create_candy_machine -e mainnet-beta -k ~/.config/solana/id.json -p 0.5
 ```
 ```
-ts-node ~/metaplex-foundation/metaplex/js/packages/cli/src/candy-machine-cli.ts     update_candy_machine     --env mainnet-beta     --keypair ~/.config/solana/id.json     --price 0.5     --date "07 Oct 2021 20:50:00 GMT"
+ts-node ~/metaplex-foundation/metaplex/js/packages/cli/src/candy-machine-cli.ts     update_candy_machine     --env mainnet-beta     --keypair ~/.config/solana/id.json     --price 0.5     --date "08 Oct 2021 23:00:00 GMT"
 ```
 
 ## Rest BS
