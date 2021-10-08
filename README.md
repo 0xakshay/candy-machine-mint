@@ -14,6 +14,20 @@ ts-node ~/metaplex-foundation/metaplex/js/packages/cli/src/candy-machine-cli.ts 
 ts-node ~/metaplex-foundation/metaplex/js/packages/cli/src/candy-machine-cli.ts     update_candy_machine     --env mainnet-beta     --keypair ~/.config/solana/id.json     --price 0.5     --date "08 Oct 2021 23:00:00 GMT"
 ```
 
+## Devnet Upload
+```
+ts-node ~/metaplex-foundation/metaplex/js/packages/cli/src/candy-machine-cli.ts upload ./assets --env devnet --keypair ~/.config/solana/devnet.json
+```
+```
+ts-node ~/metaplex-foundation/metaplex/js/packages/cli/src/candy-machine-cli.ts verify --env devnet --keypair ~/.config/solana/devnet.json
+```
+```
+ts-node ~/metaplex-foundation/metaplex/js/packages/cli/src/candy-machine-cli.ts create_candy_machine -e devnet -k ~/.config/solana/devnet.json -p 0.5
+```
+```
+ts-node ~/metaplex-foundation/metaplex/js/packages/cli/src/candy-machine-cli.ts     update_candy_machine     --env devnet     --keypair ~/.config/solana/devnet.json     --price 0.5     --date "08 Oct 2021 23:00:00 GMT"
+```
+
 ## Rest BS
 The Candy-Machine-Mint project is designed to let users fork, customize, and deploy their own candy machine mint app to a custom domain, ultra fast.
 
