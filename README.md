@@ -1,4 +1,5 @@
 # Candy-Machine-Mint
+https://hackmd.io/@levicook/HJcDneEWF
 
 ## Mainnet Upload
 ```
