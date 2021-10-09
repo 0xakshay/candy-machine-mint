@@ -13,6 +13,9 @@ ts-node ~/metaplex-foundation/metaplex/js/packages/cli/src/candy-machine-cli.ts 
 ```
 ts-node ~/metaplex-foundation/metaplex/js/packages/cli/src/candy-machine-cli.ts     update_candy_machine     --env mainnet-beta     --keypair ~/.config/solana/id.json     --price 0.5     --date "08 Oct 2021 23:00:00 GMT"
 ```
+Minting ```
+ts-node ~/metaplex-foundation/metaplex/js/packages/cli/src/candy-machine-cli.ts mint_one_token --env mainnet-beta --keypair /home/lexi/.config/solana/id.json
+```
 
 ## Devnet Upload
 ```
