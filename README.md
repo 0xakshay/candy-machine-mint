@@ -5,7 +5,7 @@
 ts-node ~/metaplex-foundation/metaplex/js/packages/cli/src/candy-machine-cli.ts upload ./assets --env mainnet-beta --keypair ~/.config/solana/id.json
 ```
 ```
-ts-node ~/metaplex-foundation/metaplex/js/packages/cli/src/candy-machine-cli.ts verify --env mainnet-beta --keypair ~/.config/solana/id.json
+ts-node ~/metaplex-foundation/metaplex/js/packages/cli/src/candy-machine-cli.ts verify --env mainnet-beta --keypair ~/.config/solana/id.json -l trace
 ```
 ```
 ts-node ~/metaplex-foundation/metaplex/js/packages/cli/src/candy-machine-cli.ts create_candy_machine -e mainnet-beta -k ~/.config/solana/id.json -p 0.5
@@ -19,7 +19,7 @@ ts-node ~/metaplex-foundation/metaplex/js/packages/cli/src/candy-machine-cli.ts 
 ts-node ~/metaplex-foundation/metaplex/js/packages/cli/src/candy-machine-cli.ts upload ./assets --env devnet --keypair ~/.config/solana/devnet.json
 ```
 ```
-ts-node ~/metaplex-foundation/metaplex/js/packages/cli/src/candy-machine-cli.ts verify --env devnet --keypair ~/.config/solana/devnet.json
+ts-node ~/metaplex-foundation/metaplex/js/packages/cli/src/candy-machine-cli.ts verify --env devnet --keypair ~/.config/solana/devnet.json -l trace
 ```
 ```
 ts-node ~/metaplex-foundation/metaplex/js/packages/cli/src/candy-machine-cli.ts create_candy_machine -e devnet -k ~/.config/solana/devnet.json -p 0.5
